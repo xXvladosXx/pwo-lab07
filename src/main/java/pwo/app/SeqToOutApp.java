@@ -1,13 +1,18 @@
 package pwo.app;
+
 import pwo.utils.SequenceTools;
 
 /**
+ * A class that extends the operation of the {@link pwo.app.SeqToFileApp}
+ * function. Class adds the ability to write the results to the console screen.
  *
  * @author pidoras
  */
 public class SeqToOutApp extends SeqToFileApp {
 
     /**
+     * A method that takes arguments from the super class, checking for data and
+     * whether they are valid and return value or false
      *
      * @param args
      * @return
@@ -15,12 +20,15 @@ public class SeqToOutApp extends SeqToFileApp {
     @Override
     protected boolean getArgs(String[] args) {
 
-        if (super.getArgs(args)) return true;
+        if (super.getArgs(args)) {
+            return true;
+        }
 
         return seqType != null && from >= 0 && to >= 0;
     }
 
     /**
+     * The method to do the target work
      *
      * @return
      */
@@ -34,6 +42,7 @@ public class SeqToOutApp extends SeqToFileApp {
     }
 
     /**
+     * The method to run the application object
      *
      * @param args
      */

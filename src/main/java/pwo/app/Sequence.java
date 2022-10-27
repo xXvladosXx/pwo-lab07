@@ -1,12 +1,15 @@
 package pwo.app;
 
 /**
+ * The main class of the program that is responsible for running a specific
+ * sequence in depending on the number of arguments provided
  *
  * @author pidoras
  */
 public class Sequence {
 
     /**
+     * The first function that is run when the program starts.
      *
      * @param args
      */
