@@ -1,8 +1,17 @@
 package pwo.app;
 import pwo.utils.SequenceTools;
 
+/**
+ *
+ * @author pidoras
+ */
 public class SeqToOutApp extends SeqToFileApp {
 
+    /**
+     *
+     * @param args
+     * @return
+     */
     @Override
     protected boolean getArgs(String[] args) {
 
@@ -11,7 +20,10 @@ public class SeqToOutApp extends SeqToFileApp {
         return seqType != null && from >= 0 && to >= 0;
     }
 
-
+    /**
+     *
+     * @return
+     */
     @Override
     protected boolean writeSeq() {
 
@@ -21,7 +33,10 @@ public class SeqToOutApp extends SeqToFileApp {
         return true;
     }
 
-
+    /**
+     *
+     * @param args
+     */
     @Override
     public void run(String[] args) {
 

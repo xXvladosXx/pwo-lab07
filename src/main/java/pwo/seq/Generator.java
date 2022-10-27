@@ -4,8 +4,16 @@ import java.math.BigDecimal;
 
 import pwo.utils.SequenceGenerator;
 
+/**
+ *
+ * @author pidoras
+ */
 abstract class Generator implements SequenceGenerator {
 
+    /**
+     *
+     * @author pidoras
+     */
     protected int lastIndex = 0;
     protected int currentIndex = 0;
     protected BigDecimal current = null,
@@ -27,10 +35,9 @@ abstract class Generator implements SequenceGenerator {
 
         currentIndex = i;
         if (i < lastIndex) {
-           while (i < lastIndex)
-           {
-               lastIndex--;
-           }
+            while (i < lastIndex) {
+                lastIndex--;
+            }
         }
 
         while (lastIndex <= i) {

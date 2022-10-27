@@ -2,8 +2,15 @@ package pwo.seq;
 
 import java.math.BigDecimal;
 
+/**
+ *
+ * @author pidoras
+ */
 public class LucasGenerator extends FibonacciGenerator {
 
+    /**
+     *
+     */
     public LucasGenerator() {
         current = new BigDecimal(2);
         f_2 = new BigDecimal(2);

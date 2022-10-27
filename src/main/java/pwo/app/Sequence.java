@@ -1,7 +1,15 @@
 package pwo.app;
 
+/**
+ *
+ * @author pidoras
+ */
 public class Sequence {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         switch (args.length) {

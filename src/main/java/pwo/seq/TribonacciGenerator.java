@@ -2,19 +2,34 @@ package pwo.seq;
 
 import java.math.BigDecimal;
 
+/**
+ * In mathematics, the Fibonacci numbers form a sequence defined recursively
+ * That is, after two starting values, each number is the sum of the two preceding numbers.
+ * @author pidoras
+ * @version 1.0.0
+ */
 public class TribonacciGenerator extends
         FibonacciGenerator {
 
+    /**
+     * Generates a constructor with default f_3 = 0
+     */
     public TribonacciGenerator() {
         f_3 = new BigDecimal(0);
     }
 
+    /**
+     * Resets value to 0
+     */
     @Override
     public void reset() {
         super.reset();
         f_3 = new BigDecimal(0);
     }
 
+     /**
+     * Adding more than two numbers to generate the next number, or by adding objects other than numbers 
+     */
     @Override
     public BigDecimal nextTerm() {
         if (lastIndex > 2) {
